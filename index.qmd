@@ -1,0 +1,27 @@
+---
+title: "Data Science for Public Policy"
+subtitle: "Class Exercise 04"
+author: "Hannah Reynolds - hjr45"
+execute:
+  warning: false
+format:
+  html:
+    embed-resources: true
+---
+
+
+
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
+
+
+```{r}
+storms %>%
+  ggplot (mapping = aes (x = category, y = wind))+
+  geom_line()
+```
+
+The `echo: false` option disables the printing of code (only output is displayed).
